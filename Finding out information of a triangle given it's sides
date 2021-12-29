@@ -2,7 +2,7 @@
 #include <math.h>
 int side1, side2, side3;
 int main(){
-	printf("Enter 3 the lengths of the sides of the triangle to find out what kind of triangle it is.");
+	printf("Enter 3 the lengths of the sides of the triangle to find out what kind of triangle it is.\n");
 	printf("Enter the length of the first side: ");
 	scanf("%d", &side1);
 	printf("Enter the length of the second side: ");
@@ -13,7 +13,9 @@ int main(){
 	if (side1==side2 && side2==side3 && side1==side3){
 		printf("The triangle is equilateral");
 	}
-	
+	else if (side1+side2<side3 || side2+side3<side1 || side1+side3<side2){
+		printf("The lengths of sides given do not form a triangle");
+	}
 	else if (side1==side2||side2==side3||side1==side3){
 		printf("The triangle is isosceles");
 	}
