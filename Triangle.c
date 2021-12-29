@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+int side1, side2, side3;
+int main(){
+	printf("Enter 3 the lengths of the sides of the triangle to find out what kind of triangle it is.");
+	printf("Enter the length of the first side: ");
+	scanf("%d", &side1);
+	printf("Enter the length of the second side: ");
+	scanf("%d", &side2);
+	printf("Enter the length of the third side: ");
+	scanf("%d", &side3);
+	
+	if (side1==side2 && side2==side3 && side1==side3){
+		printf("The triangle is equilateral");
+	}
+	
+	else if (side1==side2||side2==side3||side1==side3){
+		printf("The triangle is isosceles");
+	}
+	
+	else {
+		printf("The triangle is scalene");
+	}
+return 0;
+}
