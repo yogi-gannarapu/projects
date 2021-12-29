@@ -24,3 +24,23 @@ int main(){
 	}
 return 0;
 }
+
+/* 
+Case 1:
+a1 = 60
+a2 = 60
+a3 = 60
+Result: "The triangle is equilateral"
+
+Case 2:
+a1=50
+a2=40
+a3=90
+Result: "The triangle is scalene"
+
+Case 3:
+a1=30
+a2=30
+a3=120
+Result: "The triangle is isosceles"
+/*
